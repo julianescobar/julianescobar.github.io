@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "title": "Portafolio Personal",
+    "description": "Mi sitio personal para mostrar mis proyectos y habilidades.",
+    "image": "portfolio.jpg",
+    "url": "https://julianescobar.github.io/",
+    "tags": ["React", "Tailwind", "i18n"],
+    "details": "",
+    "year": "2025"    
+  },
+  {
+    "id": 2,
+    "title": "Voy de Trip",
+    "description": "Blog de viajes enfocado en destinos turísticos de Centroamérica, con recomendaciones de sitios como hoteles, parques, comida y vida nocturna.",
+    "image": "voydetrip.webp",
+    "url": "https://voydetrip.com",
+    "tags": ["OctoberCMS", "PHP", "Twig", "CMS", "Backend", "Frontend", "Custom Plugins",  "Admin Panel"],
+    "details": "Voy de Trip es un blog de viajes desarrollado con October CMS, utilizando Twig como motor de plantillas. Se implementó un sistema de gestión de contenido personalizado para publicar artículos por categorías y países. El frontend fue optimizado con CSS personalizado y JavaScript vanilla para filtros dinámicos.  El sitio es responsive y fue optimizado para SEO.",
+    "year": "2023"
+  },
+  {
+  "id": 3,
+  "title": "iPalmera",
+  "description": "Sitio corporativo de consultoría tecnológica y servicios digitales para empresas, incluyendo desarrollo web, análisis de datos, ciberseguridad y transformación digital.",
+  "image": "ipalmera.webp",
+  "url": "https://ipalmera.com",
+  "tags": [
+    "Django",
+    "Python",
+    "CMS",
+    "Frontend",
+    "Backend",
+    "Hubspot",
+    "Integraction with CRM",
+    "Responsive",
+    "SEO"
+  ],
+   "details": "iPalmera es una plataforma corporativa desarrollada con Django y Python, enfocada en ofrecer servicios de tecnología empresarial como desarrollo web, infraestructura en la nube, análisis de datos y ciberseguridad. Utiliza plantillas Django con CSS personalizado para un diseño responsivo. El sitio se integró con HubSpot CRM para capturar y gestionar leads a través de formularios personalizados. Además, se implementaron automatizaciones en HubSpot para realizar seguimientos mediante WhatsApp a los contactos registrados. Se aplicaron buenas prácticas SEO y optimizaciones de rendimiento.",
+   "year": "2025"
+},
+{
+  "id": 4,
+  "title": "Moviendo al Mundo",
+  "description": "Blog corporativo de Otis Colombia sobre innovación y tendencias en movilidad vertical: ascensores, escaleras eléctricas y rampas.",
+  "image": "moviendoalmundo.webp",
+  "url": "https://moviendoalmundo.com",
+  "tags": [
+    "WordPress",
+    "Elementor",
+    "PHP",
+    "Blog",
+    "SEO",
+    "Responsive",
+    "Otis",
+    "CMS"
+  ],
+  "details": "Moviendo al Mundo es un blog corporativo de Otis Colombia creado con WordPress y Elementor. Se desarrolló una estructura de publicaciones especializada en temas de movilidad vertical —como ascensores, rampas y escaleras eléctricas— optimizada para SEO y orientada a mostrar contenido técnico y educativo. El diseño es responsive, con secciones como 'Cotiza aquí', 'Acerca de nosotros' y formularios de suscripción. Se integraron buenas prácticas SEO y se configuraron categorías y menús para facilitar la navegación temática.",
+  "year": "2022"
+},
+{
+  "id": 5,
+  "title": "Moviendo al Mundo",
+  "description": "Blog corporativo de Otis Colombia sobre innovación y tendencias en movilidad vertical: ascensores, escaleras eléctricas y rampas.",
+  "image": "moviendoalmundo.webp",
+  "url": "",
+  "tags": [
+    "WordPress",
+    "Elementor",
+    "PHP",
+    "Blog",
+    "SEO",
+    "Responsive",
+    "Otis",
+    "CMS"
+  ],
+  "details": "Moviendo al Mundo es un blog corporativo de Otis Colombia creado con WordPress y Elementor. Se desarrolló una estructura de publicaciones especializada en temas de movilidad vertical —como ascensores, rampas y escaleras eléctricas— optimizada para SEO y orientada a mostrar contenido técnico y educativo. El diseño es responsive, con secciones como 'Cotiza aquí', 'Acerca de nosotros' y formularios de suscripción. Se integraron buenas prácticas SEO y se configuraron categorías y menús para facilitar la navegación temática.",
+  "year": "2025"
+}
+
+
+
+]
