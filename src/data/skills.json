@@ -1,0 +1,27 @@
+[
+  {
+    "name": "HTML",
+    "score": 10,
+    "description": "Experiencia sólida en HTML semántico y accesible, incluyendo SEO on-page."
+  },
+  {
+    "name": "CSS",
+    "score": 9,
+    "description": "Uso avanzado de Flexbox, Grid, animaciones y utilidades de TailwindCSS."
+  },
+  {
+    "name": "JavaScript",
+    "score": 9,
+    "description": "Programación funcional, manejo del DOM, fetch API y lógica dinámica."
+  },
+  {
+    "name": "React",
+    "score": 7,
+    "description": "Componentes funcionales, hooks, estado global, routing, animaciones con GSAP."
+  },
+  {
+    "name": "Django",
+    "score": 4,
+    "description": "Conocimientos básicos en views, templates, modelos y sistema admin."
+  }
+]
