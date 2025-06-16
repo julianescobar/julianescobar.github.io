@@ -1,0 +1,132 @@
+[
+  {
+    "category": "Desarrollo Web",
+    "skills": [
+      {
+        "name": "React",
+        "description": "Desarrollo de interfaces dinámicas con SPA, uso avanzado de hooks y consumo eficiente de APIs.",
+        "logo": "react.svg"
+      },
+      {
+        "name": "Laravel",
+        "description": "Desarrollo back-end estructurado con rutas, controladores, Eloquent y APIs RESTful.",
+        "logo": "laravel.svg"
+      },
+      {
+        "name": "Tailwind",
+        "description": "Maquetación rápida y diseño responsive con enfoque en utilidad y consistencia visual.",
+        "logo": "tailwindcss.svg"
+      },
+      {
+        "name": "CSS",
+        "description": "Diseño adaptable con estilos personalizados, animaciones y media queries.",
+        "logo": "css.svg"
+      },
+      {
+        "name": "Strapi",
+        "description": "Creación de APIs personalizadas con CMS headless en Node.js para contenido dinámico.",
+        "logo": "strapi.svg"
+      },
+      {
+        "name": "WooCommerce",
+        "description": "Desarrollo y personalización de tiendas online sobre WordPress con pagos y envíos integrados.",
+        "logo": "woocommerce.svg"
+      },
+      {
+        "name": "WordPress",
+        "description": "Implementación de sitios web a medida con temas personalizados y bloques reutilizables.",
+        "logo": "wordpress.svg"
+      },
+      {
+        "name": "PHP",
+        "description": "Desarrollo de lógica del servidor, validación y manejo de formularios y bases de datos.",
+        "logo": "php.svg"
+      },
+      {
+        "name": "Django",
+        "description": "Desarrollo web robusto con Python, modelos ORM, panel de administración y seguridad integrada.",
+        "logo": "django.svg"
+      },
+      {
+        "name": "JavaScript",
+        "description": "Interactividad en el navegador, manipulación del DOM y lógica del cliente moderna.",
+        "logo": "javascript.svg"
+      }
+    ]
+  },
+  {
+    "category": "Analítica y SEO",
+    "skills": [
+      {
+        "name": "GA4",
+        "description": "Medición avanzada de eventos, conversiones y comportamiento del usuario en tiempo real.",
+        "logo": "googleanalytics.svg"
+      },
+      {
+        "name": "GTM",
+        "description": "Gestión de etiquetas sin código, activadores personalizados y configuración de variables.",
+        "logo": "googletagmanager.svg"
+      },
+      {
+        "name": "SEO técnico",
+        "description": "Optimización de estructura, velocidad, metadatos y buenas prácticas de rastreo e indexación.",
+        "logo": "seo.svg"
+      },
+      {
+        "name": "Semrush",
+        "description": "Análisis competitivo, auditorías SEO y estrategia de keywords para posicionamiento orgánico.",
+        "logo": "semrush.svg"
+      }
+    ]
+  },
+  {
+    "category": "Infraestructura y DevOps",
+    "skills": [
+      {
+        "name": "Linux",
+        "description": "Administración de servidores, gestión de archivos y automatización con línea de comandos.",
+        "logo": "linux.svg"
+      },
+      {
+        "name": "Nginx",
+        "description": "Configuración de servidor web y proxy reverso para aplicaciones escalables y seguras.",
+        "logo": "nginx.svg"
+      },
+      {
+        "name": "Apache",
+        "description": "Configuración de entornos web con módulos, .htaccess y manejo de dominios virtuales.",
+        "logo": "apache.svg"
+      },
+      {
+        "name": "Google Cloud",
+        "description": "Despliegue de aplicaciones, bases de datos y servicios escalables en la nube.",
+        "logo": "googlecloud.svg"
+      },
+      {
+        "name": "DigitalOcean",
+        "description": "Creación y mantenimiento de VPS con Droplets, redes privadas y backups.",
+        "logo": "digitalocean.svg"
+      },
+      {
+        "name": "cPanel",
+        "description": "Gestión de cuentas de hosting, correos, dominios y bases de datos de forma intuitiva.",
+        "logo": "cpanel.svg"
+      },
+      {
+        "name": "Cloudflare",
+        "description": "Mejora de rendimiento web con CDN, seguridad contra ataques DDoS y manejo de DNS.",
+        "logo": "cloudflare.svg"
+      }
+    ]
+  },
+  {
+    "category": "Automatización y Marketing",
+    "skills": [
+      {
+        "name": "HubSpot",
+        "description": "Automatización de marketing, creación de workflows y gestión de clientes con CRM.",
+        "logo": "hubspot.svg"
+      }
+    ]
+  }
+]

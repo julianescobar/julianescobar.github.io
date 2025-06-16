@@ -1,90 +1,154 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useLayoutEffect } from 'react';
 import projects from '../data/projects.json';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { FaEye } from 'react-icons/fa';
+import SectionTitle from './SectionTitle';
+import { useTranslation } from 'react-i18next';
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Projects() {
+  const { t } = useTranslation();
   const [selectedProject, setSelectedProject] = useState(null);
+  const cardsRef = useRef([]);
+  const sectionRef = useRef(null);
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(cardsRef.current, {
+        opacity: 0,
+        y: 60,
+        duration: 1,
+        stagger: 0.25,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 50%',
+          toggleActions: 'play none none none',
+        },
+      });
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
+  const handleCardClick = (id) => {
+    if (window.innerWidth < 768) {
+      setSelectedProject(selectedProject === id ? null : id);
+    }
+  };
 
   return (
-    <section id="projects" className="py-16 px-4 bg-gray-100 text-gray-900">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center">Proyectos</h2>
+    <section id="projects" className="py-16 px-4 bg-dark2 text-white" ref={sectionRef}>
+      <div className="max-w-6xl mx-auto">        
+        <SectionTitle title={t('projects')} className="text-center mb-2"></SectionTitle>
+        <p className="text-center text-gray-300 max-w-xl mx-auto mb-8 text-sm">
+        Los siguientes proyectos fueron desarrollados y entregados por mí durante mi etapa como parte del equipo de iPalmera S.A. Actualmente no están bajo mi administración directa.
+      </p>
         <div className="grid md:grid-cols-2 gap-8">
-       {projects.map((project) => (
-  <div key={project.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
-    <img
-      src={`/src/assets/projects/${project.image}`}
-      alt={project.title}
-      className="w-full h-48 object-cover"
-    />
-    <div className="p-6">
-      <div className="flex items-center justify-between mb-2">
-        <h3 className="text-xl font-semibold">{project.title}</h3>        
-        <span
-          className={`text-xs px-2 py-1 rounded ${
-            project.url
-              ? 'bg-green-100 text-green-700'
-              : 'bg-red-100 text-red-700'
-          }`}
-        >
-          {project.url ? 'Online' : 'Archivado'}
-        </span>
-      </div>
-      <p className="text-gray-700 mb-4">{project.description}</p>
-      <div className="flex flex-wrap gap-2 mb-4">
-        {project.tags.map((tag, i) => (
-          <span key={i} className="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded">
-            {tag}
-          </span>
-        ))}
-      </div>
-      <button
-        onClick={() => setSelectedProject(project)}
-        className="text-blue-600 hover:underline"
+          {projects.map((project, index) => {
+            const isFlipped = selectedProject === project.id;
+            return (
+              <div
+                key={project.id}
+                className="flip-card perspective relative"
+                ref={(el) => (cardsRef.current[index] = el)}
+              >
+                <div
+                  className={`flip-card-inner transition-transform duration-700 ease-in-out ${
+                    isFlipped ? 'rotate-y-180' : ''
+                  } md:hover:rotate-y-180`}
+                >
+                  {/* Front */}
+                  <div className="flip-card-front bg-gray-800 shadow-md rounded-lg overflow-hidden">
+                    {project.featured && (
+                    <div className="absolute top-2 right-2 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded">
+                      ⭐ 
+                    </div>
+                  )}
+                    <img
+                      src={`/src/assets/projects/${project.image}`}
+                      alt={project.title}
+                      className="w-full h-48 object-cover"
+                    />
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-2">
+                        <h3 className="text-xl font-semibold">{project.title}</h3>
+                        <span
+                          className={`text-xs px-3 py-1 rounded-full font-medium ${
+                            project.url ? 'bg-green-500 text-white' : 'bg-red-500 text-white'
+                          }`}
+                        >
+                          {project.url ? 'Online' : 'Archivado'}
+                        </span>
+                      </div>
+                      <p className="text-gray-300 mb-4">{project.description}</p>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.tags.map((tag, i) => (
+                          <span
+                            key={i}
+                            className="text-sm bg-gray-700 text-white px-2 py-1 rounded"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      {/* Botón solo visible en móvil */}
+                      <button
+                        onClick={() => handleCardClick(project.id)}
+                        className="md:hidden inline-block px-4 py-2 mt-2 text-sm font-medium text-white bg-sky-600 rounded hover:bg-sky-500 transition"
+                      >
+                        {isFlipped ? 'Ocultar' : 'Ver más →'}
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Back */}
+              <div className="flip-card-back absolute inset-0 bg-gray-900 text-white p-6 rounded-lg overflow-y-auto flex items-center justify-center">
+                 {project.featured && (
+                    <div className="absolute top-2 right-2 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded">
+                      ⭐ 
+                    </div>
+                  )}
+  <div className="max-w-lg w-full text-center relative">
+    
+    <button
+      onClick={() => handleCardClick(project.id)}
+      className="md:hidden absolute top-2 right-3 text-gray-400 hover:text-white text-2xl font-bold"
+    >
+      &times;
+    </button>
+
+    <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
+
+    <p className="text-gray-300 mb-4">{project.details}</p>
+
+    {project.url ? (
+      <a
+        href={project.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center text-sky-400 hover:underline gap-2"
+        title="Ver proyecto"
       >
-        Ver más →
-      </button>
-    </div>
+        <FaEye className="text-lg" />
+        <span className="text-white text-sm">Visitar sitio web</span>
+      </a>
+    ) : (
+      <p className="text-sm text-gray-500 italic">
+        Este proyecto actualmente no está disponible en línea.
+      </p>
+    )}
   </div>
-))}
+</div>
 
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
-
-      {/* Modal */}
-      {selectedProject && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
-          <div className="bg-white p-6 rounded-lg max-w-lg w-full relative shadow-xl">
-            <button
-              onClick={() => setSelectedProject(null)}
-              className="absolute top-2 right-2 text-gray-500 hover:text-black text-xl"
-            >
-              &times;
-            </button>
-            <h3 className="text-2xl font-bold mb-4">{selectedProject.title}</h3>
-            <img
-              src={`/src/assets/projects/${selectedProject.image}`}
-              alt={selectedProject.title}
-              className="w-full h-48 object-cover rounded mb-4"
-            />
-            <p className="text-gray-800 mb-4">{selectedProject.details}</p>     
-
-            {selectedProject.url ? (
-  <a
-    href={selectedProject.url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block text-blue-600 hover:underline"
-  >
-    Ver proyecto →
-  </a>
-) : (
-  <p className="text-sm text-gray-500 italic">Este proyecto actualmente no está disponible en línea.</p>
-)}
-  
-            
-          </div>
-        </div>
-      )}
     </section>
   );
 }

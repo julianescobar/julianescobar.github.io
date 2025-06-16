@@ -1,27 +1,36 @@
 import { useTranslation } from 'react-i18next';
 import profileImg from '../assets/jescobar.webp';
+import SectionTitle from './SectionTitle';
 
 function About() {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="py-16 bg-gray-100 dark:bg-gray-900">
+    <section id="about" className="pt-30 bg-dark pb-16">
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
         {/* Imagen o ilustración */}
         <div className="flex justify-center">
           <img
             src={profileImg}
             alt="Julián Escobar"
-            className="w-60 h-60 object-cover rounded-full border-4 border-blue-500 shadow-lg"
+            className="w-60 h-60 object-cover"
           />
         </div>
 
         {/* Texto */}
-        <div>
-          <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">{t('about')}</h2>
-          <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-            {t('about_description')}
-          </p>
+        <div>          
+          <SectionTitle title={t('about')}></SectionTitle>
+          <p className="lwhite leading-relaxed">
+          {t('about_description')
+          
+            .split('\n\n')
+            .map((paragraph, index) => (
+              <span key={index} className="block mb-4">
+                {paragraph}
+              </span>
+            ))}
+        </p>
+
         </div>
       </div>
     </section>

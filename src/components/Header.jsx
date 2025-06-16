@@ -1,30 +1,95 @@
+import { useState, useRef, useLayoutEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import gsap from 'gsap';
 
-function Header() {
-  const { t, i18n } = useTranslation();
+export default function Header() {
+  const { t } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
+  const logoRef = useRef(null);
+  const pseudoLogoText = t('pseudologo');
 
-  const changeLanguage = (lng) => i18n.changeLanguage(lng);
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const letters = logoRef.current?.querySelectorAll('.letter');
+      if (letters?.length) {
+        const tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+
+        tl.fromTo(
+          letters,
+          { opacity: 0, y: 10 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.3,
+            stagger: 0.04,
+            ease: 'power2.out',
+          }
+        ).to(
+          letters,
+          {
+            opacity: 0,
+            y: -10,
+            duration: 0.2,
+            stagger: 0.02,
+            ease: 'power2.in',
+          },
+          '+=0.5'
+        );
+      }
+    }, logoRef);
+
+    return () => ctx.revert();
+  }, [pseudoLogoText]);
 
   return (
-    <header className="bg-black text-white px-6 py-4 flex justify-between items-center">
-      <h1 className="text-xl font-bold">{t('welcome')}</h1>
+    <header className="backdrop-blur-md bg-black/40 text-white px-6 py-4 fixed top-0 left-0 w-full z-50 shadow-lg">
+  <div className="max-w-7xl mx-auto flex justify-between items-center relative w-full">
+    
+    {/* Logo animado */}
+    <div
+      ref={logoRef}
+      className="bg-gray-800 font-semibold text-sm md:text-base px-4 py-2 rounded-md shadow-md font-mono flex"
+    >
+      {pseudoLogoText.split('').map((char, index) => (
+        <span key={index} className="letter inline-block">
+          {char === ' ' ? '\u00A0' : char}
+        </span>
+      ))}
+    </div>
 
-      <ul className="flex space-x-4">
-        <li><a href="#about">{t('about')}</a></li>
-        <li><a href="#projects">{t('projects')}</a></li>
-        <li><a href="#skills">{t('skills')}</a></li>
-        <li><a href="#contact">{t('contact')}</a></li>
-      </ul>
+    {/* Menú desktop */}
+    <ul className="hidden md:flex space-x-6">
+      <li><a href="#about" className="hover:underline">{t('about')}</a></li>
+      <li><a href="#projects" className="hover:underline">{t('projects')}</a></li>
+      <li><a href="#skills" className="hover:underline">{t('skills')}</a></li>
+      <li><a href="#contact" className="hover:underline">{t('contact')}</a></li>
+    </ul>
 
-      <div>
-        {/* 
-        <button onClick={() => changeLanguage('es')} className="mr-2">ES</button>
-        <button onClick={() => changeLanguage('en')}>EN</button>
-        */}
-      </div>
-    </header>
+    {/* Botón hamburguesa en mobile */}
+    <button
+      className="md:hidden absolute right-4 top-1/2 -translate-y-1/2 z-50"
+      onClick={() => setIsOpen(!isOpen)}
+    >
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        {isOpen ? (
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+        ) : (
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+        )}
+      </svg>
+    </button>
+  </div>
+
+  {/* Menú mobile */}
+  {isOpen && (
+    <ul className="md:hidden flex flex-col items-start space-y-4 px-6 pt-4 pb-2 bg-black">
+      <li><a href="#about" className="hover:underline">{t('about')}</a></li>
+      <li><a href="#projects" className="hover:underline">{t('projects')}</a></li>
+      <li><a href="#skills" className="hover:underline">{t('skills')}</a></li>
+      <li><a href="#contact" className="hover:underline">{t('contact')}</a></li>
+    </ul>
+  )}
+</header>
+
   );
 }
-
-
-export default Header;

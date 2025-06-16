@@ -1,14 +1,24 @@
 [
-  {
-    "id": 1,
-    "title": "Portafolio Personal",
-    "description": "Mi sitio personal para mostrar mis proyectos y habilidades.",
-    "image": "portfolio.jpg",
-    "url": "https://julianescobar.github.io/",
-    "tags": ["React", "Tailwind", "i18n"],
-    "details": "",
-    "year": "2025"    
-  },
+ {
+  "id": 1,
+  "title": "Mi Portafolio Web",
+  "description": "Aplicación web desarrollada en React para presentar mi experiencia, habilidades y proyectos.",
+  "image": "portafolio.webp",
+  "url": "https://julianescobar.github.io/",
+  "tags": [
+    "React",
+    "Tailwind",
+    "GSAP",
+    "Responsive",
+    "i18n",
+    "SEO",
+    "Diseño Web"
+  ],
+  "details": "Este portafolio fue diseñado y programado por mí como una SPA (Single Page Application) con React, utilizando Tailwind CSS para el estilo, animaciones con GSAP, e internacionalización con i18next. El objetivo fue ofrecer una experiencia visual clara y profesional, con tarjetas interactivas para proyectos, filtros por categoría y compatibilidad móvil. Incluye buenas prácticas de SEO, componentes reutilizables y enfoque modular en el código.",
+  "year": "2025",
+  "featured": true
+},
+
   {
     "id": 2,
     "title": "Voy de Trip",
@@ -17,7 +27,8 @@
     "url": "https://voydetrip.com",
     "tags": ["OctoberCMS", "PHP", "Twig", "CMS", "Backend", "Frontend", "Custom Plugins",  "Admin Panel"],
     "details": "Voy de Trip es un blog de viajes desarrollado con October CMS, utilizando Twig como motor de plantillas. Se implementó un sistema de gestión de contenido personalizado para publicar artículos por categorías y países. El frontend fue optimizado con CSS personalizado y JavaScript vanilla para filtros dinámicos.  El sitio es responsive y fue optimizado para SEO.",
-    "year": "2023"
+    "year": "2023",
+    "featured": false
   },
   {
   "id": 3,
@@ -37,46 +48,72 @@
     "SEO"
   ],
    "details": "iPalmera es una plataforma corporativa desarrollada con Django y Python, enfocada en ofrecer servicios de tecnología empresarial como desarrollo web, infraestructura en la nube, análisis de datos y ciberseguridad. Utiliza plantillas Django con CSS personalizado para un diseño responsivo. El sitio se integró con HubSpot CRM para capturar y gestionar leads a través de formularios personalizados. Además, se implementaron automatizaciones en HubSpot para realizar seguimientos mediante WhatsApp a los contactos registrados. Se aplicaron buenas prácticas SEO y optimizaciones de rendimiento.",
-   "year": "2025"
+   "year": "2025",
+   "featured": false
 },
 {
   "id": 4,
-  "title": "Moviendo al Mundo",
-  "description": "Blog corporativo de Otis Colombia sobre innovación y tendencias en movilidad vertical: ascensores, escaleras eléctricas y rampas.",
-  "image": "moviendoalmundo.webp",
-  "url": "https://moviendoalmundo.com",
+  "title": "Asequímicos",
+  "description": "Sitio web corporativo para Asequímicos, empresa líder en soluciones para tratamiento de agua y piscinas, construido en WordPress y Elementor.",
+  "image": "asequimicos.webp",
+  "url": "https://asequimicos.com/",
   "tags": [
     "WordPress",
     "Elementor",
     "PHP",
-    "Blog",
-    "SEO",
+    "Corporativo",
     "Responsive",
-    "Otis",
-    "CMS"
+    "SEO",
+    "iPalmera"
   ],
-  "details": "Moviendo al Mundo es un blog corporativo de Otis Colombia creado con WordPress y Elementor. Se desarrolló una estructura de publicaciones especializada en temas de movilidad vertical —como ascensores, rampas y escaleras eléctricas— optimizada para SEO y orientada a mostrar contenido técnico y educativo. El diseño es responsive, con secciones como 'Cotiza aquí', 'Acerca de nosotros' y formularios de suscripción. Se integraron buenas prácticas SEO y se configuraron categorías y menús para facilitar la navegación temática.",
-  "year": "2022"
-},
+  "details": "Desarrollado durante mi etapa en iPalmera S.A., construí el sitio web corporativo de Asequímicos, una empresa colombiana con más de 40 años en soluciones para tratamiento de agua y piscinas. Utilicé WordPress y Elementor para diseñar un sitio limpio, totalmente responsivo y optimizado para SEO. Implementé formularios de contacto, sección de blog, estructura de páginas para servicios, certificaciones ISO, representantes y blog informativo. Además, me encargué de la maquetación y de adaptar las funciones personalizadas al diseño entregado por el equipo.",
+  "year": "2025",
+  "featured": false
+}
+,
 {
   "id": 5,
-  "title": "Moviendo al Mundo",
-  "description": "Blog corporativo de Otis Colombia sobre innovación y tendencias en movilidad vertical: ascensores, escaleras eléctricas y rampas.",
-  "image": "moviendoalmundo.webp",
+  "title": "Integro",
+  "description": "Ecommerce inmobiliario desarrollado en WordPress y WooCommerce para la reserva de apartamentos en línea.",
+  "image": "integro.webp",
   "url": "",
   "tags": [
     "WordPress",
-    "Elementor",
+    "WooCommerce",
     "PHP",
-    "Blog",
-    "SEO",
+    "Ecommerce",
+    "Inmobiliario",
+    "APIs",
     "Responsive",
-    "Otis",
-    "CMS"
+    "UX/UI",
+    "iPalmera"
   ],
-  "details": "Moviendo al Mundo es un blog corporativo de Otis Colombia creado con WordPress y Elementor. Se desarrolló una estructura de publicaciones especializada en temas de movilidad vertical —como ascensores, rampas y escaleras eléctricas— optimizada para SEO y orientada a mostrar contenido técnico y educativo. El diseño es responsive, con secciones como 'Cotiza aquí', 'Acerca de nosotros' y formularios de suscripción. Se integraron buenas prácticas SEO y se configuraron categorías y menús para facilitar la navegación temática.",
-  "year": "2025"
+  "details": "Este proyecto fue desarrollado durante mi etapa en iPalmera S.A., donde participé como responsable de la maquetación e implementación funcional. Se creó un ecommerce inmobiliario personalizado con WordPress y WooCommerce para permitir la reserva de apartamentos en línea. Los usuarios podían explorar visualmente las torres, seleccionar pisos y apartamentos, y ver características detalladas de cada unidad. Se integraron métodos de pago con bancos locales, paneles de administración para asesores comerciales, y se consumieron APIs externas para actualizar el inventario en tiempo real. El sitio fue adaptado para ofrecer una experiencia de usuario fluida y completamente responsiva.",
+  "year": "2025",
+  "featured": true
+},
+
+{
+  "id": 6,
+  "title": "Kalea GT",
+  "description": "Ecommerce de muebles y decoración desarrollado en Magento para una reconocida marca guatemalteca.",
+  "image": "kalea.webp",
+  "url": "",
+  "tags": [
+    "Magento",
+    "Ecommerce",
+    "Frontend",
+    "Backend",
+    "LATAM",
+    "UI Adaptation",
+    "Responsive",
+    "Premiado"
+  ],
+  "details": "En 2019 participé en el desarrollo del ecommerce de Kalea GT, una reconocida marca guatemalteca de muebles y decoración. El sitio fue construido en Magento, donde me encargué de la implementación técnica, personalización de funcionalidades, consumo de APIs para sincronización de inventario, registro de pedidos y facturación. Aunque el diseño visual y la maquetación fueron realizados por otros miembros del equipo, colaboré activamente en su integración. La tienda incluyó promociones por temporada, un checkout optimizado e integración con pasarelas de pago locales. Ese mismo año, el sitio fue reconocido como el 3.er mejor ecommerce de LATAM por Interlat Colombia.",
+  "year": "2019",
+  "featured": true
 }
+
 
 
 

@@ -1,27 +1,77 @@
 [
   {
-    "name": "HTML",
-    "score": 10,
-    "description": "Experiencia sólida en HTML semántico y accesible, incluyendo SEO on-page."
+    "category": "Desarrollo Web",
+    "skills": [
+       {
+        "name": "WordPress",
+        "description": "Desarrollo de sitios a medida con temas personalizados, bloques reutilizables, WooCommerce y enfoque headless usando WPGraphQL.",
+        "logo": "wordpress.svg"
+      },   
+       {
+        "name": "CSS",
+        "description": "Diseño adaptable con estilos personalizados, animaciones y media queries. Experiencia con Flexbox y Bootstrap. Explorando el uso de Tailwind en nuevos proyectos.",
+        "logo": "css.svg"
+      },     
+      {
+        "name": "JavaScript",
+        "description": "Programación en el cliente, manipulación del DOM, eventos, consumo de APIs y trabajo conjunto con CSS y frameworks modernos.",
+        "logo": "javascript.svg"
+      },
+      {
+        "name": "Django",
+        "description": "Desarrollo web robusto con Python, modelos ORM, panel de administración y seguridad integrada.",
+        "logo": "django.svg"
+      },
+         {
+        "name": "React",
+        "description": "Creación de interfaces con componentes, hooks básicos y consumo de APIs REST. Experiencia inicial en proyectos con Tailwind y CMS headless.",
+        "logo": "react.svg"
+      },
+      {
+        "name": "Laravel",
+        "description": "Desarrollo personalizado con Blade, rutas y controladores. Experiencia en OctoberCMS y conexión con bases de datos usando Eloquent.",
+        "logo": "laravel.svg"
+      }
+    ]
   },
   {
-    "name": "CSS",
-    "score": 9,
-    "description": "Uso avanzado de Flexbox, Grid, animaciones y utilidades de TailwindCSS."
+    "category": "Analítica y SEO",
+    "skills": [
+      {
+        "name": "GA4 & GTM",
+         "description": "Configuración de Google Tag Manager con etiquetas personalizadas, disparadores y variables. Integración con GA4 para seguimiento de eventos, conversiones y métricas clave en sitios web.",        
+        "logo": "googleanalytics.svg"
+      },
+      {
+        "name": "SEO técnico",
+        "description": "Auditoría, estructura, metadatos, optimización on-page y uso de herramientas como Semrush para mejorar el posicionamiento.",
+        "logo": "seo.svg"
+      }
+    ]
   },
   {
-    "name": "JavaScript",
-    "score": 9,
-    "description": "Programación funcional, manejo del DOM, fetch API y lógica dinámica."
+    "category": "Infraestructura y DevOps",
+    "skills": [
+      {
+        "name": "Linux & Servidores",
+        "description": "Administración de servidores con Linux, configuración de entornos con Nginx y Apache, despliegue en VPS (DigitalOcean, Google Cloud, Netifly, EC2) y manejo de hosting y dominios vía cPanel.",
+        "logo": "linux.svg"
+      },
+      {
+        "name": "Cloudflare",
+        "description": "Optimización del rendimiento web, CDN, protección DDoS y gestión avanzada de DNS para proyectos en producción.",
+        "logo": "cloudflare.svg"
+      }
+    ]
   },
   {
-    "name": "React",
-    "score": 7,
-    "description": "Componentes funcionales, hooks, estado global, routing, animaciones con GSAP."
-  },
-  {
-    "name": "Django",
-    "score": 4,
-    "description": "Conocimientos básicos en views, templates, modelos y sistema admin."
+    "category": "Automatización y Marketing",
+    "skills": [
+      {
+        "name": "HubSpot",
+        "description": "CRM, automatización de marketing, diseño de landings, creación de workflows y segmentación de leads.",
+        "logo": "hubspot.svg"
+      }
+    ]
   }
 ]

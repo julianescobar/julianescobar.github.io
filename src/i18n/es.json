@@ -1,8 +1,9 @@
 {
   "welcome": "Bienvenido",
   "about": "Sobre mí",
+  "contact": "Contacto",
   "projects": "Proyectos",
-  "skills": "Habilidades",
-  "contact": "Contacto",  
-  "about_description": "Soy un desarrollador web con 10 años de experiencia especializado en WordPress, WooCommerce, CSS y JavaScript. Actualmente estoy aprendiendo React y Django para expandir mis habilidades."
+  "skills": "Habilidades",    
+  "about_description": "Soy desarrollador web con más de 10 años de experiencia creando sitios, aplicaciones y soluciones a medida para empresas y agencias.\n\nA lo largo de mi carrera, he trabajado con tecnologías como WordPress, Laravel, Django y React, integrando diseño, funcionalidad y rendimiento según las necesidades del proyecto.\n\nMe especializo en el despliegue completo de proyectos: desde la maquetación responsive hasta la configuración de servidores en DigitalOcean o Google Cloud. También tengo experiencia en automatización de marketing con HubSpot (CRM, workflows, segmentación de leads) y en la medición de resultados mediante GA4, GTM y SEO técnico.\n\nHe colaborado en diversos entornos y equipos, tanto con CMS tradicionales como en arquitecturas headless. Me gusta mantenerme actualizado, aprender nuevas herramientas y aplicar soluciones eficientes con un enfoque práctico y orientado al impacto real en el negocio.",
+  "pseudologo": "Julián Escobar - Full Stack Developer"
 }
