@@ -43,12 +43,13 @@ export default function Header() {
 
   return (
     <header className="backdrop-blur-md bg-black/40 text-white px-6 py-4 fixed top-0 left-0 w-full z-50 shadow-lg">
-  <div className="max-w-7xl mx-auto flex justify-between items-center relative w-full">
+  <div className="max-w-7xl mx-auto flex justify-between items-center relative w-full logo-xs">
     
     {/* Logo animado */}
     <div
       ref={logoRef}
-      className="bg-gray-800 font-semibold text-sm md:text-base px-4 py-2 rounded-md shadow-md font-mono flex"
+      className="bg-gray-800 font-semibold text-xs sm:text-sm md:text-base lg:text-lg px-4 py-2 rounded-md shadow-md font-mono flex"
+
     >
       {pseudoLogoText.split('').map((char, index) => (
         <span key={index} className="letter inline-block">
