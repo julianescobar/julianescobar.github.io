@@ -7,7 +7,7 @@ function Footer() {
         {/* Íconos de redes sociales */}
         <div className="flex space-x-6 text-2xl">
           <a
-            href="https://github.com/tuusuario"
+            href="https://github.com/julianescobar"
             target="_blank"
             rel="noreferrer"
             className="hover:text-white transition-colors duration-300"

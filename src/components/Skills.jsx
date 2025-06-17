@@ -47,7 +47,7 @@ function Skills() {
               className="bg-dark2 p-4 rounded-lg shadow-md flex gap-4 items-start"
             >
               <img
-                src={`/src/assets/img/skills/${skill.logo}`}
+                src={`/img/skills/${skill.logo}`}
                 alt={skill.name}
                 className="w-10 h-10 object-contain invert"
               />

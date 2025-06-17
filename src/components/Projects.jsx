@@ -7,6 +7,16 @@ import SectionTitle from './SectionTitle';
 import { useTranslation } from 'react-i18next';
 
 gsap.registerPlugin(ScrollTrigger);
+const projectImages = import.meta.glob('../assets/projects/*.{png,jpg,jpeg,webp,svg}', {
+  eager: true,
+  import: 'default'
+});
+
+const imageMap = {};
+for (const path in projectImages) {
+  const fileName = path.split('/').pop();
+  imageMap[fileName] = projectImages[path];
+}
 
 function Projects() {
   const { t } = useTranslation();
@@ -68,7 +78,7 @@ function Projects() {
                     </div>
                   )}
                     <img
-                      src={`/src/assets/projects/${project.image}`}
+                      src={`/img/projects/${project.image}`}
                       alt={project.title}
                       className="w-full h-48 object-cover"
                     />
