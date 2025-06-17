@@ -117,18 +117,19 @@ function Projects() {
                   {/* Back */}
               <div className="flip-card-back absolute inset-0 bg-gray-900 text-white p-6 rounded-lg overflow-y-auto flex items-center justify-center">
                  {project.featured && (
-                    <div className="absolute top-2 right-2 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded">
+                    <div className="absolute top-2 left-2 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded">
                       ⭐ 
                     </div>
                   )}
-  <div className="max-w-lg w-full text-center relative">
-    
-    <button
+                   <button
       onClick={() => handleCardClick(project.id)}
-      className="md:hidden absolute top-2 right-3 text-gray-400 hover:text-white text-2xl font-bold"
+      className="md:hidden absolute top-0 right-3 text-gray-400 hover:text-white text-2xl font-bold"
     >
       &times;
     </button>
+  <div className="max-w-lg w-full text-center relative">
+    
+   
 
     <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
 

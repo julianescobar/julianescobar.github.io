@@ -47,7 +47,7 @@
     "Responsive",
     "SEO"
   ],
-   "details": "iPalmera es una plataforma corporativa desarrollada con Django y Python, enfocada en ofrecer servicios de tecnología empresarial como desarrollo web, infraestructura en la nube, análisis de datos y ciberseguridad. Utiliza plantillas Django con CSS personalizado para un diseño responsivo. El sitio se integró con HubSpot CRM para capturar y gestionar leads a través de formularios personalizados. Además, se implementaron automatizaciones en HubSpot para realizar seguimientos mediante WhatsApp a los contactos registrados. Se aplicaron buenas prácticas SEO y optimizaciones de rendimiento.",
+   "details": "iPalmera es una plataforma corporativa desarrollada con Django y Python, enfocada en ofrecer servicios de tecnología empresarial . Utiliza plantillas Django con CSS personalizado para un diseño responsivo. El sitio se integró con HubSpot CRM para capturar y gestionar leads a través de formularios personalizados. Además, se implementaron automatizaciones en HubSpot para realizar seguimientos mediante WhatsApp a los contactos registrados. Se aplicaron buenas prácticas SEO y optimizaciones de rendimiento.",
    "year": "2025",
    "featured": false
 },
@@ -66,7 +66,7 @@
     "SEO",
     "iPalmera"
   ],
-  "details": "Desarrollado durante mi etapa en iPalmera S.A., construí el sitio web corporativo de Asequímicos, una empresa colombiana con más de 40 años en soluciones para tratamiento de agua y piscinas. Utilicé WordPress y Elementor para diseñar un sitio limpio, totalmente responsivo y optimizado para SEO. Implementé formularios de contacto, sección de blog, estructura de páginas para servicios, certificaciones ISO, representantes y blog informativo. Además, me encargué de la maquetación y de adaptar las funciones personalizadas al diseño entregado por el equipo.",
+  "details": "Sitio corporativo para Asequímicos, empresa colombiana con más de 40 años en soluciones para tratamiento de agua. Desarrollado con WordPress y Elementor, enfocado en SEO y captación de leads. Incluye diseño responsivo, formularios, blog, secciones de servicios, certificaciones y representantes, todo adaptado al diseño entregado.",
   "year": "2025",
   "featured": false
 }
@@ -88,7 +88,7 @@
     "UX/UI",
     "iPalmera"
   ],
-  "details": "Este proyecto fue desarrollado durante mi etapa en iPalmera S.A., donde participé como responsable de la maquetación e implementación funcional. Se creó un ecommerce inmobiliario personalizado con WordPress y WooCommerce para permitir la reserva de apartamentos en línea. Los usuarios podían explorar visualmente las torres, seleccionar pisos y apartamentos, y ver características detalladas de cada unidad. Se integraron métodos de pago con bancos locales, paneles de administración para asesores comerciales, y se consumieron APIs externas para actualizar el inventario en tiempo real. El sitio fue adaptado para ofrecer una experiencia de usuario fluida y completamente responsiva.",
+  "details": "En este proyecto participé como responsable de la maquetación e implementación funcional. Se creó un ecommerce inmobiliario personalizado con WordPress y WooCommerce para permitir la reserva de apartamentos en línea. Los usuarios podían explorar visualmente las torres, seleccionar pisos y apartamentos, y ver características detalladas de cada unidad. Se integraron métodos de pago con bancos locales, paneles de administración para asesores comerciales, y se consumieron APIs externas para actualizar el inventario en tiempo real.",
   "year": "2025",
   "featured": true
 },
@@ -101,15 +101,12 @@
   "url": "",
   "tags": [
     "Magento",
-    "Ecommerce",
-    "Frontend",
+    "Ecommerce",    
     "Backend",
     "LATAM",
-    "UI Adaptation",
-    "Responsive",
     "Premiado"
   ],
-  "details": "En 2019 participé en el desarrollo del ecommerce de Kalea GT, una reconocida marca guatemalteca de muebles y decoración. El sitio fue construido en Magento, donde me encargué de la implementación técnica, personalización de funcionalidades, consumo de APIs para sincronización de inventario, registro de pedidos y facturación. Aunque el diseño visual y la maquetación fueron realizados por otros miembros del equipo, colaboré activamente en su integración. La tienda incluyó promociones por temporada, un checkout optimizado e integración con pasarelas de pago locales. Ese mismo año, el sitio fue reconocido como el 3.er mejor ecommerce de LATAM por Interlat Colombia.",
+  "details": "Ecommerce para Kalea GT, marca guatemalteca de muebles. Me encargué de la programación en Magento: personalización de funcionalidades, consumo de APIs para inventario y facturación, promociones, checkout optimizado e integración con pasarelas locales. Reconocido como el 3.er mejor ecommerce de LATAM por Interlat en 2019.",
   "year": "2019",
   "featured": true
 }
