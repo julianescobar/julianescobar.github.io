@@ -33,11 +33,9 @@ function Portfolio({ hiddenContact, hiddenSocial }) {
       <section ref={skillsRef}>
         <Skills />
       </section>
-      {!hiddenContact && (
-        <section ref={contactRef}>
-          <Footer bg="bg-dark2" hiddenSocial={hiddenSocial} />
-        </section>
-      )}
+      <section ref={contactRef}>
+        <Footer bg="bg-dark2" hiddenSocial={hiddenSocial} />
+      </section>
     </>
   );
 }
