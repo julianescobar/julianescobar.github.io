@@ -2,7 +2,7 @@ import { useState, useRef, useLayoutEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import gsap from 'gsap';
 
-export default function Header() {
+export default function Header({hiddenContact}) {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const logoRef = useRef(null);
@@ -63,7 +63,9 @@ export default function Header() {
       <li><a href="#about" className="hover:underline">{t('about')}</a></li>
       <li><a href="#projects" className="hover:underline">{t('projects')}</a></li>
       <li><a href="#skills" className="hover:underline">{t('skills')}</a></li>
+      {!hiddenContact && (
       <li><a href="#contact" className="hover:underline">{t('contact')}</a></li>
+      )}
     </ul>
 
     {/* Botón hamburguesa en mobile */}
@@ -87,7 +89,9 @@ export default function Header() {
       <li><a href="#about" className="hover:underline">{t('about')}</a></li>
       <li><a href="#projects" className="hover:underline">{t('projects')}</a></li>
       <li><a href="#skills" className="hover:underline">{t('skills')}</a></li>
+      {!hiddenContact && (
       <li><a href="#contact" className="hover:underline">{t('contact')}</a></li>
+      )}
     </ul>
   )}
 </header>

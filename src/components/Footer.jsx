@@ -1,10 +1,11 @@
 import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 
-function Footer() {
+function Footer({bg, hiddenSocial}) {
   return (
-    <footer className="bg-dark text-gray-300 py-10">
+    <footer className={`${bg || 'bg-dark'}  text-gray-300 py-10`}>
       <div className="flex flex-col items-center space-y-6">
         {/* Íconos de redes sociales */}
+        {!hiddenSocial && (
         <div className="flex space-x-6 text-2xl">
           <a
             href="https://github.com/julianescobar"
@@ -41,6 +42,7 @@ function Footer() {
             <FaWhatsapp />
         </a>
         </div>
+         )}
 
         {/* Línea de derechos */}
         <p className="text-sm text-gray-300 text-center px-4 md:px-0">
