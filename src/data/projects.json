@@ -1,23 +1,24 @@
 [
  {
   "id": 1,
-  "title": "Mi Portafolio Web",
-  "description": "Aplicación web desarrollada en React para presentar mi experiencia, habilidades y proyectos.",
-  "image": "portafolio.webp",
-  "url": "https://julianescobar.github.io/",
+  "title": "Doctors Center Hospital (Demo Headless) - Puerto Rico",
+  "description": "Versión demo del sitio institucional de Doctors Center Hospital, desarrollada con arquitectura Headless utilizando WordPress y React.",
+  "image": "doctorscenter.webp",
+  "url": "http://146.190.154.163:8081/",
   "tags": [
     "React",
-    "Tailwind",
-    "GSAP",
-    "Responsive",
-    "i18n",
-    "SEO",
-    "Diseño Web"
+    "Gatsby",
+    "GraphQL",
+    "WordPress",
+    "Headless CMS",
+    "Frontend",
+    "Integración API"
   ],
-  "details": "Este portafolio fue diseñado y programado por mí como una SPA (Single Page Application) con React, utilizando Tailwind CSS para el estilo, animaciones con GSAP, e internacionalización con i18next. El objetivo fue ofrecer una experiencia visual clara y profesional, con tarjetas interactivas para proyectos, filtros por categoría y compatibilidad móvil. Incluye buenas prácticas de SEO, componentes reutilizables y enfoque modular en el código.",
-  "year": "2025",
+  "details": "Este proyecto corresponde a una versión demo del sitio web institucional de Doctors Center Hospital, creada para demostrar una arquitectura Headless moderna. WordPress se utilizó como backend para la gestión de contenidos, mientras que el frontend se desarrolló con Gatsby y React, consumiendo datos mediante GraphQL. Incluye módulos dinámicos para noticias, empleos, especialidades médicas y centros de atención. Se aplicaron buenas prácticas de rendimiento, SEO y diseño responsive. Aunque esta versión ya no está en producción, refleja el enfoque técnico y las capacidades implementadas en el desarrollo original.",
+  "year": "2024",
   "featured": true
 },
+
 
   {
     "id": 2,
@@ -48,7 +49,7 @@
     "SEO"
   ],
    "details": "iPalmera es una plataforma corporativa desarrollada con Django y Python, enfocada en ofrecer servicios de tecnología empresarial . Utiliza plantillas Django con CSS personalizado para un diseño responsivo. El sitio se integró con HubSpot CRM para capturar y gestionar leads a través de formularios personalizados. Además, se implementaron automatizaciones en HubSpot para realizar seguimientos mediante WhatsApp a los contactos registrados. Se aplicaron buenas prácticas SEO y optimizaciones de rendimiento.",
-   "year": "2025",
+   "year": "2024",
    "featured": false
 },
 {
@@ -67,12 +68,35 @@
     "iPalmera"
   ],
   "details": "Sitio corporativo para Asequímicos, empresa colombiana con más de 40 años en soluciones para tratamiento de agua. Desarrollado con WordPress y Elementor, enfocado en SEO y captación de leads. Incluye diseño responsivo, formularios, blog, secciones de servicios, certificaciones y representantes, todo adaptado al diseño entregado.",
-  "year": "2025",
+  "year": "2024",
   "featured": false
 }
 ,
 {
   "id": 5,
+  "title": "ESI Education",
+  "description": "Sitio institucional para una entidad educativa, desarrollado en WordPress con Elementor e integraciones avanzadas para gestión de estudiantes y pagos en línea.",
+  "image": "esi-education.webp",
+  "url": "https://esieduc.org/",
+  "tags": [
+    "WordPress",
+    "Elementor",
+    "HubSpot",
+    "Visanet",
+    "Credomatic",
+    "Integraciones",
+    "Educación",
+    "Pasarela de Pago",
+    "Responsive",
+    "UX/UI"
+  ],
+  "details": "Desarrollo de un sitio web institucional para ESI Education, una entidad educativa con presencia internacional. El proyecto fue construido en WordPress utilizando Elementor para la creación de secciones informativas sobre programas académicos, admisiones y noticias. Se implementó una integración con HubSpot para la gestión automatizada de formularios, envío de fichas de pensum y seguimiento de interesados. Además, se configuraron pasarelas de pago con Visanet y Credomatic, permitiendo a los estudiantes realizar abonos en línea de manera segura. El sitio cuenta con un diseño responsive y optimizado para mejorar la experiencia de usuario y la accesibilidad.",
+  "year": "2024",
+  "featured": true
+},
+
+{
+  "id": 6,
   "title": "Integro",
   "description": "Ecommerce inmobiliario desarrollado en WordPress y WooCommerce para la reserva de apartamentos en línea.",
   "image": "integro.webp",
@@ -89,12 +113,12 @@
     "iPalmera"
   ],
   "details": "En este proyecto participé como responsable de la maquetación e implementación funcional. Se creó un ecommerce inmobiliario personalizado con WordPress y WooCommerce para permitir la reserva de apartamentos en línea. Los usuarios podían explorar visualmente las torres, seleccionar pisos y apartamentos, y ver características detalladas de cada unidad. Se integraron métodos de pago con bancos locales, paneles de administración para asesores comerciales, y se consumieron APIs externas para actualizar el inventario en tiempo real.",
-  "year": "2025",
+  "year": "2021",
   "featured": true
 },
 
 {
-  "id": 6,
+  "id": 7,
   "title": "Kalea GT",
   "description": "Ecommerce de muebles y decoración desarrollado en Magento para una reconocida marca guatemalteca.",
   "image": "kalea.webp",
@@ -109,7 +133,52 @@
   "details": "Ecommerce para Kalea GT, marca guatemalteca de muebles. Me encargué de la programación en Magento: personalización de funcionalidades, consumo de APIs para inventario y facturación, promociones, checkout optimizado e integración con pasarelas locales. Reconocido como el 3.er mejor ecommerce de LATAM por Interlat en 2019.",
   "year": "2019",
   "featured": true
+},
+{
+  "id": 8,
+  "title": "Pineda & Cía – Firma Legal",
+  "description": "Sitio institucional para despacho de abogados con panel privado desarrollado en WordPress y React.",
+  "image": "pineda-nunez.webp",
+  "url": "https://pinedanunez.com/",
+  "tags": [
+    "WordPress",
+    "React",
+    "PHP",
+    "ACF",
+    "Responsive",
+    "UX/UI",
+    "Legal",
+    "Contenido Dinámico",
+    "Panel Privado"
+  ],
+  "details": "Desarrollo del sitio web para la firma Pineda & Cía, combinando WordPress como CMS y React para el panel privado. Se crearon secciones informativas de servicios legales, noticias y contacto, mientras que el panel privado, accesible solo para clientes y administradores, permite la gestión de documentación y seguimiento de casos de manera segura. El frontend React se integró con WordPress mediante la REST API, ofreciendo una experiencia fluida tipo SPA. Todo el sitio cuenta con diseño responsive, buenas prácticas de UX/UI y optimización para mantenimiento y escalabilidad.",
+  "year": "2025",
+  "featured": false
+},
+
+{
+  "id": 9,
+  "title": "Mixto Listo – Sitio Corporativo",
+  "description": "Sitio institucional para Mixto Listo, empresa con 70 años de experiencia en la construcción, desarrollado en WordPress con tema personalizado y ACF.",
+  "image": "mixtolisto.webp",
+  "url": "https://www.mixtolisto.com/",
+  "tags": [
+    "WordPress",
+    "Tema personalizado",
+    "ACF",
+    "Plugins",
+    "PHP",
+    "Responsive",
+    "UX/UI",
+    "Gestión de contenidos",
+    "Corporativo"
+  ],
+  "details": "Desarrollo del sitio web corporativo de Mixto Listo, una empresa con 70 años de trayectoria en la industria de la construcción y fundiciones. Se creó un tema personalizado en WordPress utilizando Advanced Custom Fields (ACF) para organizar y presentar contenidos dinámicos de manera profesional. Se integraron plugins personalizados para funcionalidades específicas del cliente, como catálogos de productos y formularios de contacto. El diseño es responsive, optimizado para experiencia de usuario y mantenimiento, y refleja la confiabilidad y trayectoria de la empresa.",
+  "year": "2022",
+  "featured": false
 }
+
+
 
 
 
